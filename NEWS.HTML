@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Daily News</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+        }
+        .sidebar {
+            width: 20%;
+            background-color: #f0f0f0;
+            padding: 10px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+        }
+        .sidebar input[type="text"] {
+            width: 90%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .sidebar input[type="text"]:hover {
+            border-color: #007BFF;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            margin: 10px 0;
+        }
+        .sidebar ul li a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+        .sidebar ul li a:hover {
+            color: #007BFF;
+        }
+        .content {
+            width: 80%;
+            padding: 20px;
+            background-color: #ffffff;
+        }
+        .news-item {
+            margin-bottom: 30px;
+        }
+        .news-item img {
+            width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+        }
+        .news-item h2 {
+            font-size: 24px;
+            margin: 15px 0;
+        }
+        .news-item p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <input type="text" placeholder="Search...">
+        <ul>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Live</a></li>
+            <li><a href="#">Entertainment</a></li>
+            <li><a href="#">Sports</a></li>
+            <li><a href="#">Combat Sports</a></li>
+            <li><a href="#">Weather</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <div class="news-item">
+            <img src="https://tds-images.thedailystar.net/sites/default/files/styles/big_202/public/images/2025/01/09/new_textbooks_no_cap.jpg" alt="Textbooks">
+            <h2>Textbook Fiasco: End Excuses, Act Now</h2>
+            <p>The government's repeated failure to deliver textbooks on time to crores of students is both unacceptable and indicative of systemic inefficiency. Despite promises from the National Curriculum and Textbook Board (NCTB), countless children have once again been left without the essential tools for education, reflecting a disregard for the future of the nation's youth.</p>
+        </div>
+        <div class="news-item">
+            <img src="https://tds-images.thedailystar.net/sites/default/files/styles/big_201/public/images/2024/11/11/sheikh-bashir-uddin.jpg" alt="Commerce Adviser">
+            <h2>'We Don’t Have Aladdin’s Lamp to Suddenly Lower Commodity Prices'</h2>
+            <p>Commerce adviser says after meeting with Turkish trade minister.</p>
+        </div>
+        <div class="news-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXkErNm5gps-h_9xk2fC4671Aqb8Y4c4yeMI2awubBcMv0g0NM5renIXdTksuCDqaZeTY&usqp=CAU" alt="Gold Theft">
+            <h2>250-Bhori Gold Stolen from Sylhet Mall</h2>
+            <p>Gold ornaments worth Tk 3.5 crore was stolen between Wednesday evening and yesterday morning from a jewellery shop at a Sylhet shopping mall.</p>
+        </div>
+    </div>
+</body>
+</html>
