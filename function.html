@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>
+
+        Function in JS
+
+    </title>
+
+</head>
+
+<body>
+    <p id="demo">
+    <p id="demo1"></p>
+    </p>
+    <p id="demo5"></p>
+
+    <button type="button" onclick="myfunction()">
+        Click ME
+    </button>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+
+    <script>
+        function Student() {
+            document.getElementById("demo").innerHTML = "Rajveer";
+
+        }
+        //function call
+        Student();
+
+        // function parameters
+        function Add(x, y) {
+            var sum;
+            sum = x + y;
+            return sum;
+
+        }
+        result = Add(30, 100);
+        document.getElementById("demo1").innerHTML = resut;
+
+        // function multiplication
+        function Add(x, y) {
+            var sum;
+            sum = x * y;
+            return sum;
+
+        }
+        result = Add(30, 100);
+        document.getElementById("demo2").innerHTML = resut;
+
+        // function division
+        function Add(x, y) {
+            var sum;
+            sum = x \ y;
+            return sum;
+
+        }
+        result = Add(30, 100);
+        document.getElementById("demo3").innerHTML = resut;
+
+        // function subtraction
+        function Add(x, y) {
+            var sum;
+            sum = x - y;
+            return sum;
+
+        }
+        result = Add(30, 100);
+        docment.getElementById("demo4").innerHTML = result;
+
+        function sub(x, y) {
+            var sub;
+            sub = x - y;
+            return sub
+        }
+        result1 = sub(30, 50);
+        document.getElementById("demo5").innerHTML = result1;
+
+        var b = 5;
+        function myfunction() {
+            var a = 4;  //local variable inside function
+            document.getElementById("demo6").innerHTML = b * a;
+        }
+        document.getElementById("demo7").innerHTML = a;
+    </script>
+
+</body>
+
+</html>
