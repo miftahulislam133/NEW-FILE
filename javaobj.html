@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+
+    </style>
+</head>
+
+<body>
+
+    <script>
+
+        var student = {
+            name: 'miftahul islam',
+            age: 14,
+            grade: 8,
+            fav_color: 'black'
+
+        };
+        document.getElementById("demo").innerHTML = student.name;
+
+        var value = Math.acos(-1);
+        document.write("Demo1 Test value : " + value + "<br>");
+
+        var value = Math.asin(1);
+        document.write("Demo2 Test value : " + value + "<br>");
+
+        var value = Math.atan(.5);
+        document.write("Demo3 Test value : " + value + "<br>");
+
+
+
+        function findMax() {
+            var max = 0;
+            for (var i = 0; i < arguments.length; i++) {
+                if (arguments[i] > max)
+            }
+        }
+        return max;
+            }
+        document.getElementById("result").innerHTML = findmax(4, 2, 11, 88);
+
+    </script>
+</body>
+<p id="result"></p>
+
+</html>
