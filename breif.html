@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Breif</title>
+
+</head>
+
+<body>
+
+    <script>
+
+        <p id="demo"></p>
+
+
+        var studentName = "Rajveer";//string datatype
+        var grade = 7; //interger
+        var marks = 555.55; //float
+        var StudentId = true; //boolean datatype
+
+        document.write("Student Name: ", studentName, "<br>");
+        document.write("Student Grade: ", grade, "<br>");
+        document.write("Student Marks: ", marks, "<br>");
+    </script>
+
+    <h1>Clock</h1>
+
+    <button onclick="myFunction()">Try it</button>
+    <p id="hour"></p>
+    <p id="greet"></p>
+    <script>
+        function myFunction() {
+            var greeting;
+            var time = new Date().getHours();
+
+            if (time < 12) {
+                greeting = "Good morning";
+            }
+            else if (time < 19) {
+                greeting = "Good day";
+            }
+            else {
+                greeting = "Good evening";
+            }
+
+            document.getElementById("hour").innerHTML = "Current Hour is: " + time;
+            document.getElementById("greet").innerHTML = greeting;
+
+        }
+
+
+    </script>
+    <h2>Javascript While Loop</h2>
+    <p id="number"></p>
+    <script>
+        var text = "";
+        var i = 0;
+        while (i < 10) {
+            text += "<br>The number is" + i;
+            i++;
+        }
+        document.getElementById("number").innerHTML = text;
+    </script>
+
+
+
+
+</body>
+
+</html>
