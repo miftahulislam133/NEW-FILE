@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DOM Project</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #000428, #004e92);
+            /* Dark blue gradient */
+            color: white;
+            /* Text color for readability */
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>DOM PROJECT</h1> <!-- Added title above the button -->
+
+    <button type="button" onclick="myFunction()">Click Me!</button>
+
+    <p id="mytext">Click the button to change me</p>
+    <button id="changetextbtn">Change text</button>
+
+    <p id="demo"></p>
+    <h1 id="one">Document Object ModeL</h1>
+    <p>This project demonstrates how to dynamically modify HTML elements using JavaScript.</p>
+    <h2>Technology</h2>
+    <p id="techText">Hello,Whats going on!
+    </p>
+
+    <script>
+        document.getElementById("changetextbtn").addEventListener("click", function () {
+            let text1 = document.getElementById("mytext");
+            text1.textContent = document.getElementById("techText").textContent; // Assigning one node value to another
+        });
+
+        var text = document.getElementById("one").innerHTML;
+        alert("The first heading is: " + text);
+
+        function myFunction() {
+            var a = 3;
+            document.getElementById("demo").innerHTML = a * a;
+        }
+    </script>
+
+</body>
+
+</html>
