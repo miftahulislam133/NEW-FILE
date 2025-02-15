@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<body>
+
+    <h2>Array sorting</h2>
+
+    <p>In this lesson you will be learning about array sorting, mapping and about evaluation function in JS.</p>
+
+    <p id="student1"></p>
+
+    <p id="student2"></p>
+
+    <button onclick="ascending()">Ascending orders</button>
+    <button onclick="descending()">Descending orders</button>
+    <p id="result"></p>
+    <p id="Product_value"></p>
+
+    <script>
+        var points = [40, 100, 1, 5, 25, 10];
+        document.getElementById("result").innerHTML = points;
+        function ascending() {
+            points.sort(function (a, b) { return a - b });
+            document.getElementById("result").innerHTML = points;
+        }
+        function descending() {
+            points.sort(function (a, b) { return b - a });
+            document.getElementById("result").innerHTML = points;
+        }
+
+        var numbers = [28, 6, , 19, 95];
+
+        function myfunction(num) {
+            return num * 10;
+        }
+        var newarray = numbers.map(myfunction);
+        document.getElementById("Product_value").innerHTML = newarray;
+
+        function myfunction() {
+            var x = 10;
+            var y = 20;
+            var a = eval("x + y") + "<br>";
+            var b = eval("2 * 2") + "<br>";
+            var c = eval("y - x") + "<br>";
+
+            var res = a + b + c;//concatenates the string
+            document.getElementById("result").innerHTML = res;
+        }
+
+
+    </script>
+
+</body>
+
+</html>
